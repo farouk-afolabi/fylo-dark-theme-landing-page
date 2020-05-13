@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+
+* {
+box-sizing: border-box;
+}
+body { 
+    font-family : 'Open Sans',sans-serif ;
+    
+    text-decoration:none ;
+    
+    
+    font-weight: 400;
+    margin: 0;
+    background-color:#181f2a;
+    padding:0; 
+
+    
+}
+
+a{
+    text-decoration: none;
+    color: #999;
+    font-family:  "Raleway", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    ;
+}
+
+
+p {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: black;
+  }
+  
+  img {
+  max-width: 100%;
+    height: auto;
+  }
+  
+  
+
+ul { list-style-type: none;
+    margin:0;
+}
+
+    button {
+        color:#fff;
+        background:hsl(224, 93%,58%); 
+        width: 15rem;
+        height: 3rem;
+        border-radius: 2rem;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        outline: none;
+    }
+    button:hover {
+        background-image: linear-gradient(#65e2d9, #339ecc) ;
+        
+    }
+
+    h1,
+    button,
+    nav {
+        font-family: "Raleway" , sans-serif;
+        font-weight: 700;
+        color: #fff;
+        
+    }
+    button,
+    nav { 
+        font-weight: 400;
+    }
+
+    p,
+    nav,
+    button,
+    a {
+        font-size:12px;
+        color:white;
+
+        
+    }
+    
+    /* navigation */
+    nav  {display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+     #logo {max-width:100%;
+            height: auto;
+            margin: 10px
+           }
+               
+     .nav > ul {display:flex;
+               margin: 20px 0px;}
+        
+     .nav ul >li {
+                margin:0px 10px;
+     }
+     .navigation{ margin:10px 0px;
+        font-weight:400;
+       }
+       
+    /* End of Navigation */
+
+/* Main Banner */
+  .main-banner {margin: 30px 40px; }
+
+   .btn  { margin:20px;}
+       
+   /* End of Main Banner */
+
+   /* services */
+   .services { display: flex;
+             flex-direction: column;
+             }
+   .service { margin : 20px 49px;}
+   .service > img { margin: 20px 35%;}
+   .service1 { margin : 20px 49px;}
+   .service1 > img { margin: 20px 35%;}
+   .service2 {margin : 20px 49px;}
+   .service2 > img { margin: 20px 35%;}
+   .service3 {margin : 20px 49px;}
+   .service3 > img { margin: 20px 35%;}
+   /* END OF SERVICES */
+
+
+   /* SUB BANNER */
+   .sub-banner {display:flex;
+               flex-direction: column;
+            margin: 30px 12px;
+        }
+    .subs{margin: 40px 0px;}
+      
+   
+   /* END OF SUB BANNER */
+
+   /* TESTIMONIALS */
+   .testimonials{margin:0px  20px;}
+   .test { background:#1c2431; 
+           margin: 20px;
+           padding: 20px;
+        }
+
+   .test img{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+.profile-name h2,span { margin: 0px;
+    color: #fff; 
+    font-size: 10px;
+}
+.box-image {display: flex;}
+/* END OF TESTIMONIALS */
+   
+ /* CONTACT */
+  .subscribe {background:#1c2431;
+    width: 90%;
+margin: 30px 20px;
+padding:20px;}
+.subscribe input {
+    outline: none;
+    height: 3rem;
+        border-radius: 2rem;
+        width: 20rem;
+        margin:0px 0px;
+}
+.button { width:20rem;}
+/* END OF CONTACT */
+
+/* FOOTER */
+ .foot {display:flex;
+       flex-direction: column;
+     flex-wrap: nowrap;
+}
+ .footer-top {margin: 30px;}
+ .footer-bottom ul{ margin:20px 0px;}
+ .footer-bottom li { margin:5px 20px;}
+
+ .social  {
+     display: flex;
+             flex-direction: row;}
+            
+ /* END OF FOOTER */
+
+ /* FOR DESKTOP */
+  @media only screen and (min-width: 768px){
+     /* navigation */
+   
+   nav .nav a {
+    padding: 3px;
+    font-size: 20px;
+    color: #fff;
+  }
+  nav .nav a:hover {
+        border-bottom: 1px solid #999;
+  }
+  
+ /* End of navigation */
+     
+     
+     /* main banner */
+    
+     .main-banner { display: flex;
+        flex-direction: column;
+         
+    }
+     .main {
+         max-width: 100%;
+         align-self: center;
+         height: auto;
+         order: 1;
+
+    }
+     .mains {order: 2;
+        align-self:center;
+        
+
+    }
+    .mains > .btn {margin:10px 20rem;}
+    
+     
+     header {margin: 20px 0px;}
+     
+     .title{
+         font-size: 30px; }
+     
+     
+     /* End of main banner */
+     
+     
+     /* services */
+     .services{ display: grid;
+        grid-template-areas: "service  service1"
+                             "service2 service3";
+    
+        
+         margin:10px 0px;
+         padding:;
+         
+        
+    }
+    
+    
+    .service h1{
+        font-size: 30px;
+    }
+     .service {grid-area:service;
+              margin:30px 50px ;
+              padding:0px 50px;}
+     .service1 {grid-area:service1;
+               margin: 20px 50px;
+               padding:0px 50px;}
+               
+     .service2 { grid-area:service2;
+                margin: 20px 50px;
+                padding:0px 50px;}
+     .service3 {grid-area:service3;
+                margin: 30px 50px;
+                padding:0px 50px;}
+    
+     
+     
+     /* End of services */
+    
+     /* sub banner */
+     .sub-banner{ display: flex;
+                 flex-direction: row;
+        
+        
+    }
+     .sub{order: 1;
+          padding: 0px 30px;
+         }
+     .subs {order: 2;
+           margin:30px 20px;
+        }
+     .subs h1{ font-size :2em;}
+     .subs a{ text-decoration: underline;}
+    /* End of sub banner */
+    
+    
+    /* Testimonials */
+    .testimonials{ margin: 150px;}
+    .tester { display:flex;
+             width: 100%;
+             
+            }
+ .test {  background:#1c2431;
+          margin:0px 20px;
+          padding:10px 40px 20px 20px;
+       }
+    .test img{
+        width:30px;
+        height: 30px;
+        border-radius: 50%;
+        
+    }
+    .test h2, span {
+        margin:0px;
+        
+    }
+    .box-image {display:flex;
+        color: white;}
+    .profile-name h2, .profile-name span { color:white;
+                        font-size: 13px;
+                        margin:0px;}   
+    
+    
+   
+    /* End of testimonials */
+    
+    
+    /* contact */
+    .subscribe{ background:#1c2431;
+        width: 60%;
+        display:flex;
+        flex-direction: column;
+        margin: 0px 200px;
+        padding:30px 30px ;
+    
+        flex-wrap: wrap;
+        
+    
+    
+    }
+    .subscribe p {  margin: 10px 60px ;
+                  color:white;}
+    .subscribe h1 {color: white;
+                   margin: 10px 0px 10px 30%}
+    .subscribe input {
+        outline: none;
+        height: 2rem;
+            border-radius: 1rem;
+            width: 30rem;
+            margin:20px 5%;
+      }
+    .button {  width: 10rem;
+        height: 2rem;
+        border-radius: 2rem;
+        margin:20px 0px ;
+                    
+    }
+    form{display:flex;}
+    
+    
+    /* End of contact */
+    
+    
+    /* footer */
+    footer { 
+      /*  background:#1c2431; */
+        background:black;
+    }
+   .foot {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 10px;
+    }
+
+
+
+  .footer-top{ margin : 20px;
+} 
+ 
+    .footer-bottom {display: flex;
+       flex-direction: row;
+       padding: 0px 0px 0px 0px ;
+       margin: 20px ;
+    
+   }
+   .footer-bottom li { margin:10px 20px;
+                     }
+   .social{ display:flex;
+   }
+   .social >li { margin:10px 5px;}
+
+    }
+
+
